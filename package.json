@@ -4,7 +4,9 @@
   "description": "the best npm package !",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest ./src/index.spec.js",
+    "test:watch":"npm test -- --watch",
+    "test:coverage":"npm test -- --coverage",
     "dev": "nodemon src/consumer.draft.js"
   },
   "keywords": [],
@@ -14,6 +16,7 @@
     "@ajar/marker": "^1.1.5"
   },
   "devDependencies": {
+    "jest": "^23.6.0",
     "nodemon": "^1.18.9"
   },
   "repository": {
